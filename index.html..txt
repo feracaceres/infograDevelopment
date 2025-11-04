@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economic Development: Key Concepts</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom styles for the diagram arrows */
+        .arrow {
+            position: relative;
+            padding: 1rem;
+            text-align: center;
+            border-radius: 0.5rem;
+            background-color: #f3f4f6; /* gray-100 */
+            width: 90%;
+            margin: 0 auto;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+        }
+        .arrow::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -20px;
+            transform: translateX(-50%);
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-top: 20px solid #f3f4f6; /* Must match arrow bg */
+        }
+        /* Hide arrow on the last element */
+        .arrow:last-child::after {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 p-4 md:p-10">
+
+    <div class="max-w-6xl mx-auto bg-white shadow-2xl rounded-2xl overflow-hidden">
+        
+        <!-- 1. Header -->
+        <header class="bg-gradient-to-r from-blue-800 to-blue-600 text-white p-8 md:p-12 text-center">
+            <h1 class="text-3xl md:text-5xl font-bold mb-2">Global Economic Development</h1>
+            <p class="text-xl md:text-2xl font-light">Inequality, Imbalances & Cooperation</p>
+        </header>
+
+        <!-- Main Content Grid -->
+        <div class="p-6 md:p-10">
+            <!-- Main Grid: 2 cols for concepts, 1 col for diagram -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+                <!-- Column 1 & 2: Main Content -->
+                <div class="lg:col-span-2 space-y-8">
+                    
+                    <!-- Section 6.1: Inequality & Poverty -->
+                    <section>
+                        <h2 class="text-2xl font-semibold text-blue-700 mb-4 border-b-2 border-blue-200 pb-2">
+                            6.1. Inequality & Poverty
+                        </h2>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <!-- Definitions -->
+                            <div class="bg-blue-50 p-4 rounded-lg border border-blue-200">
+                                <h3 class="text-lg font-semibold mb-2">Key Concepts</h3>
+                                <ul class="list-disc list-inside space-y-1">
+                                    <li><strong>Inequality:</strong> The unequal distribution of income and/or wealth within a population.</li>
+                                    <li><strong>Poverty:</strong>
+                                        <ul class="list-none list-inside ml-4">
+                                            <li><strong>Absolute:</strong> Lack of basic needs (e.g., food, shelter). Measured by the poverty line.</li>
+                                            <li><strong>Relative:</strong> Income level below a certain proportion of the national average.</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Measurement Tools:</strong>
+                                        <ul class="list-none list-inside ml-4">
+                                            <li>- Lorenz Curve (visual representation)</li>
+                                            <li>- Gini Coefficient (numerical index 0-1)</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Key Statistics -->
+                            <div class="bg-blue-50 p-4 rounded-lg border border-blue-200">
+                                <h3 class="text-lg font-semibold mb-2">Key Statistics (Examples)</h3>
+                                <div class="space-y-3">
+                                    <div class="text-center">
+                                        <p class="text-3xl font-bold text-blue-800">~76%</p>
+                                        <p class="text-sm">of global wealth is held by the richest 10% of the population.</p>
+                                    </div>
+                                    <hr>
+                                    <div class="text-center">
+                                        <p class="text-3xl font-bold text-blue-800">~700M</p>
+                                        <p class="text-sm">people live in extreme poverty (less than $2.15/day).</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Section 6.2: Explanatory Factors -->
+                    <section>
+                        <h2 class="text-2xl font-semibold text-blue-700 mb-4 border-b-2 border-blue-200 pb-2">
+                            6.2. Explanatory Factors of Imbalances
+                        </h2>
+                        <p class="mb-4">Development imbalances are caused by a complex mix of internal and external factors, often reinforcing each other.</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <h3 class="text-lg font-semibold mb-2">Internal Factors</h3>
+                                <ul class="list-disc list-inside space-y-1">
+                                    <li>Institutional quality (governance, corruption)</li>
+                                    <li>Political instability</li>
+                                    <li>Lack of human capital (education, health)</li>
+                                    <li>Weak infrastructure</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold mb-2">External Factors</h3>
+                                <ul class="list-disc list-inside space-y-1">
+                                    <li>Historical legacies (e.g., colonialism)</li>
+                                    <li>Trade imbalances (e.g., terms of trade)</li>
+                                    <li>External debt burden</li>
+                                    <li>Vulnerability to global shocks</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!-- Link for ADE Students -->
+                    <section class="bg-gray-100 p-5 rounded-lg border border-gray-300">
+                        <h3 class="text-lg font-semibold mb-2 text-gray-700 flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                            </svg>
+                            Link for ADE: Business & Development
+                        </h3>
+                        <p>For Business Administration students, it's crucial to understand how Multinational Enterprises (MNEs) and Foreign Direct Investment (FDI) impact development. While FDI can bring capital, technology, and jobs, its net effect depends on:</p>
+                        <ul class="list-disc list-inside mt-2 ml-2">
+                            <li><strong>Linkages:</strong> Creation of local supply chains vs. operating in "enclaves".</li>
+                            <li><strong>Spillovers:</strong> Transfer of technology and managerial skills to local firms.</li>
+                            <li><strong>"Bottom of the Pyramid" (BoP):</strong> Strategies that include the poorest populations as consumers and producers.</li>
+                        </ul>
+                    </section>
+
+                    <!-- Section 6.3: Cooperation -->
+                    <section>
+                        <h2 class="text-2xl font-semibold text-blue-700 mb-4 border-b-2 border-blue-200 pb-2">
+                            6.3. Cooperation for Development
+                        </h2>
+                        <p class="mb-4">Efforts to reduce imbalances and promote development are coordinated through various actors and frameworks.</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <h3 class="text-lg font-semibold mb-2">Main Actors</h3>
+                                <ul class="list-disc list-inside space-y-1">
+                                    <li><strong>Bilateral Aid:</strong> Country-to-country (e.g., ODA - Official Development Assistance).</li>
+                                    <li><strong>Multilateral Aid:</strong>
+                                        <ul class="list-none list-inside ml-4">
+                                            <li>- <strong>World Bank Group:</strong> Provides financing (IBRD, IDA) and technical assistance.</li>
+                                            <li>- <strong>IMF:</strong> Focuses on macroeconomic stability.</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Non-Governmental Org. (NGOs):</strong> Often project-based and community-focused.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold mb-2">Guiding Framework</h3>
+                                <p>The global agenda is currently guided by the:</p>
+                                <p class="text-xl font-bold text-blue-700 my-2">Sustainable Development Goals (SDGs)</p>
+                                <p>A set of 17 interconnected goals to achieve by 2030, balancing economic, social, and environmental sustainability.</p>
+                                <!-- SDG Image Placeholder -->
+                                <img src="https://placehold.co/300x150/E0F2FE/0C4A6E?text=SDG+Goals+Wheel" 
+                                     alt="Sustainable Development Goals" 
+                                     class="w-full h-auto object-cover rounded-lg mt-2"
+                                     onerror="this.src='https://placehold.co/300x150/E0F2FE/0C4A6E?text=SDG+Goals+Wheel';">
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Column 3: Poverty Cycle Diagram -->
+                <aside class="lg:col-span-1 p-4 bg-gray-50 rounded-lg lg:border-l-2 lg:border-gray-200">
+                    <h3 class="text-xl font-semibold text-center text-gray-700 mb-6">
+                        Conceptual Scheme: The Vicious Cycle of Poverty
+                    </h3>
+                    <div class="space-y-8 flex flex-col items-center">
+                        <div class="arrow">
+                            <h4 class="font-semibold">Low Income</h4>
+                            <p class="text-sm">Families cannot meet basic needs or save.</p>
+                        </div>
+                        <div class="arrow">
+                            <h4 class="font-semibold">Low Savings & Consumption</h4>
+                            <p class="text-sm">Leads to low demand and no capital for investment.</p>
+                        </div>
+                        <div class="arrow">
+                            <h4 class="font-semibold">Low Investment</h4>
+                            <p class="text-sm">In physical capital (machines) and human capital (education, health).</p>
+                        </div>
+                        <div class="arrow">
+                            <h4 class="font-semibold">Low Productivity</h4>
+                            <p class="text-sm">Workers are less healthy, skilled, and have poor equipment.</p>
+                        </div>
+                        <!-- Final loop explanation -->
+                        <div class="text-center p-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mx-auto text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <p class="font-semibold mt-2">...which leads back to Low Income, perpetuating the cycle.</p>
+                        </div>
+                    </div>
+                </aside>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
